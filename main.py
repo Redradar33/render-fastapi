@@ -32,4 +32,3 @@ async def get_instagram_url(request: Request, url: str = Form(...)):
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Error: {e}")
 
-if __name__ == "__main__":
